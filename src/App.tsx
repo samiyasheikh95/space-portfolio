@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ExperienceSection from "./components/ExperienceSection";
+import SocialInitiativesSection from "./components/SocialInitiativesSection";
+import CaseStudiesSection from "./components/CaseStudiesSection";
 import PortfolioSection from "./components/PortfolioSection";
 import SkillsSection from "./components/SkillsSection";
 import ContactSection from "./components/ContactSection";
@@ -129,6 +131,21 @@ export default function App() {
 
         {/* Collapsible Chronology Section */}
         <ExperienceSection />
+
+        {/* Dynamic section spacer trails */}
+        <StarTrailsWave className="w-full max-w-7xl mx-auto py-1.5 opacity-40" />
+
+        {/* Social Initiatives Section */}
+        <SocialInitiativesSection />
+
+        {/* Dynamic section spacer trails */}
+        <StarTrailsWave className="w-full max-w-7xl mx-auto py-1.5 opacity-40 rotate-[180deg]" />
+
+        {/* Case Studies Section */}
+        <CaseStudiesSection />
+
+        {/* Dynamic section spacer trails */}
+        <StarTrailsWave className="w-full max-w-7xl mx-auto py-1.5 opacity-40" />
 
         {/* Portfolio Showcase Bento grid */}
         <PortfolioSection />

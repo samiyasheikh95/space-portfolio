@@ -38,7 +38,7 @@ export default function SkillsSection() {
     {
       icon: "🎨",
       category: "Creative & Design",
-      tags: ["Jewelry Design", "Visual Branding", "Canva graphics", "Photography", "Creative Direction"],
+      tags: ["Jewelry Design", "Multidisciplinary Art", "Visual Branding", "Canva graphics", "Photography", "Creative Direction"],
     },
     {
       icon: "🤝",

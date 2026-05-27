@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Briefcase, Calendar, MapPin, ChevronDown, ChevronUp } from "lucide-react";
 
@@ -9,7 +9,7 @@ interface Job {
   title: string;
   company: string;
   location: string;
-  bullets: string[];
+  bullets: React.ReactNode[];
 }
 
 export default function ExperienceSection() {
@@ -18,30 +18,28 @@ export default function ExperienceSection() {
   const jobs: Job[] = [
     {
       id: 0,
-      icon: "🏢",
-      dates: "2023 – Present",
-      title: "Content & Operations Associate",
-      company: "Studio in Grey",
+      icon: "🌸",
+      dates: "Present",
+      title: "Co-Founder & Head of Design, Media, and Operations",
+      company: "Elegant Muslimah (Women-Oriented Events)",
       location: "Indore (MP)",
       bullets: [
-        "Managed end-to-end content production workflows and detailed editorial calendars.",
-        "Coordinated cross-functional teams to deliver client and internal assets on time.",
-        "Developed custom brand identity copy and integrated visual content models.",
-        "Streamlined backend operational structures to skyrocket daily team efficiency.",
+        "Co-founded and scaled a women-oriented events management brand, directing overall creative design guidance, promotional media schedules, and experiential setups.",
+        "Oversee and design all high-contrast visual materials, organic brand strategy coordinates, and interactive community media layouts.",
+        "Govern operational workflows, vendor relations pipelines, budget sheets, and core event logistics."
       ],
     },
     {
       id: 1,
-      icon: "🛍️",
-      dates: "2022 – 2023",
-      title: "Retail & Brand Coordinator",
-      company: "Pop Shop",
+      icon: "⚖️",
+      dates: "Present",
+      title: "Organising Secretary",
+      company: "Antarrashtriya Maanavaadhikaar Nyaayik Suraksha Parishad (Reg.)",
       location: "Indore (MP)",
       bullets: [
-        "Supervised creative merchandising, local inventory setups, and vendor negotiations.",
-        "Created custom experiential pop-up locations and in-store showcase structures.",
-        "Designed and maintained social media campaigns that bolstered community interactions.",
-        "Coordinated with micro-influencers and regional designers on cross-branding plans.",
+        "Direct local public advocacy programs, human rights awareness campaigns, and free legal assistance clinics.",
+        "Organize administration correspondence files, volunteer structures, and delegate coordinate outlines.",
+        "Styled highly visible graphical pamphlets, visual reports, and social templates for organizational events."
       ],
     },
     {
@@ -53,7 +51,7 @@ export default function ExperienceSection() {
       location: "Indore (MP)",
       bullets: [
         "Founded and styled an independent handcrafted bead jewelry & bespoke accessories label.",
-        "Currated design catalogs, sourced beads/mounts, and hand-built original jewelry.",
+        "Curated design catalogs, sourced beads/mounts, and hand-built original jewelry.",
         "Orchestrated regional workshops to mentor children and adults in jewelry crafts.",
         "Took full charge of product photography, graphical content, and self-publishing setups.",
         "Managed client delivery logic, custom order streams, packaging, and micro-logistics.",
@@ -61,11 +59,37 @@ export default function ExperienceSection() {
     },
     {
       id: 3,
+      icon: "🎨",
+      dates: "Dec 2025",
+      title: "Customer Relations, Backend Operations & Co-Curator",
+      company: "Exhibit-A",
+      location: "Indore (MP)",
+      bullets: [
+        "Co-curated high-profile craft works and coordinated visual collections for local art exhibitions.",
+        "Optimized daily backend operations, inventory tracking models, and logistics flows for gallery exhibitions.",
+        "Managed customer relationships, custom orders, collector inquiries, and artist profiles with high responsiveness."
+      ],
+    },
+    {
+      id: 4,
+      icon: "📱",
+      dates: "1st Oct – 31st Nov 2025",
+      title: "Social Media Manager",
+      company: "Socially Active (Agency)",
+      location: "Indore (MP)",
+      bullets: [
+        "Formulated engaging social media presence strategies, visual curation guides, and content marketing plans.",
+        "Produced 50+ aesthetic reels layouts, graphical microcopy captions, and trend-responsive scheduling grids.",
+        "Analyzed key account reach indices and boosted audience response rates organically by 25%."
+      ],
+    },
+    {
+      id: 5,
       icon: "⚖️",
-      dates: "2021 (3 Months)",
+      dates: "July 2025",
       title: "Legal Intern",
       company: "Deepesh Joshi & Associates",
-      location: "Indore (MP)",
+      location: "Bhopal (MP)",
       bullets: [
         "Conducted detailed legal research on property covenants, civil liabilities, and agency laws.",
         "Drafted basic affidavits, litigation reports, and corporate contract drafts.",
@@ -73,9 +97,62 @@ export default function ExperienceSection() {
       ],
     },
     {
-      id: 4,
+      id: 6,
+      icon: "🌍",
+      dates: "2024 – 2025",
+      title: "Content & Program Designer",
+      company: "Mu20.world",
+      location: "Remote",
+      bullets: [
+        "Worked on detailed content strategy and designed future programmes and collaborative leadership challenges.",
+        "Directed student-facing operations, virtual delegation programs, and digital community forums on youth leadership.",
+        <span className="inline" key="impact_link">
+          Co-curated and drafted the high-impact{" "}
+          <a
+            href="https://issuu.com/mu20schoolofopportunity/docs/mu20_opportunity_summit_2024_impact_report"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#EC9C9D] hover:text-[#EC9C9D]/90 underline font-semibold inline-flex items-center gap-0.5 transition-colors"
+          >
+            Mu20 Opportunity Summit 2024 Impact Report
+            <span className="text-[10px] leading-none">↗</span>
+          </a>{" "}
+          summarizing key metrics, programs and student success data.
+        </span>,
+      ],
+    },
+    {
+      id: 7,
+      icon: "🏢",
+      dates: "2023 – 2025",
+      title: "Content & Operations Associate",
+      company: "Studio in Grey",
+      location: "Indore (MP)",
+      bullets: [
+        "Managed end-to-end content production workflows and detailed editorial calendars.",
+        "Coordinated cross-functional teams to deliver client and internal assets on time.",
+        "Developed custom brand identity copy and integrated visual content models.",
+        "Streamlined backend operational structures to skyrocket daily team efficiency.",
+      ],
+    },
+    {
+      id: 8,
+      icon: "🛍️",
+      dates: "2022 – 2024",
+      title: "Retail & Brand Coordinator",
+      company: "Pop Shop",
+      location: "Mumbai (MH)",
+      bullets: [
+        "Supervised creative merchandising, local inventory setups, and vendor negotiations.",
+        "Created custom experiential pop-up locations and in-store showcase structures.",
+        "Designed and maintained social media campaigns that bolstered community interactions.",
+        "Coordinated with micro-influencers and regional designers on cross-branding plans.",
+      ],
+    },
+    {
+      id: 9,
       icon: "🏛️",
-      dates: "2020 (2 Months)",
+      dates: "May – July 2024",
       title: "Legal Research Intern",
       company: "Advocate Junaid Ahmad",
       location: "Indore (MP)",
@@ -85,22 +162,21 @@ export default function ExperienceSection() {
       ],
     },
     {
-      id: 5,
-      icon: "🌍",
-      dates: "2020 – 2021",
-      title: "Youth Engagement Coordinator",
-      company: "Mu20.world",
-      location: "Remote",
+      id: 10,
+      icon: "🎓",
+      dates: "2022 – 2023",
+      title: "Content & Outreach Intern",
+      company: "Muniversiti Edcorp",
+      location: "Indore (MP)",
       bullets: [
-        "Directed student-facing operations and virtual delegation programs.",
-        "Steered digital community forums and content campaigns on youth leadership.",
-        "Aligned collaborative efforts across 15+ student delegations globally.",
+        "Drafted informational slide sheets and student study packages.",
+        "Arranged local high-school outreach campaigns, promoting public-speaking formats.",
       ],
     },
     {
-      id: 6,
+      id: 11,
       icon: "🎯",
-      dates: "2019 – 2020",
+      dates: "2022 – 2023",
       title: "Social Media & Content Lead",
       company: "YouthGenX",
       location: "Remote",
@@ -111,27 +187,15 @@ export default function ExperienceSection() {
       ],
     },
     {
-      id: 7,
+      id: 12,
       icon: "📊",
-      dates: "2019",
-      title: "Administrative & Accounts Intern",
+      dates: "2022",
+      title: "Sales intern",
       company: "C.A Ayushi",
       location: "Indore (MP)",
       bullets: [
         "Audited basic accounts journals, tax files, and local compliance worksheets.",
         "Maintained client relations and sorted digital assets for fast reporting.",
-      ],
-    },
-    {
-      id: 8,
-      icon: "🎓",
-      dates: "2018 – 2019",
-      title: "Content & Outreach Intern",
-      company: "Muniversiti Edcorp",
-      location: "Indore (MP)",
-      bullets: [
-        "Drafted informational slide sheets and student study packages.",
-        "Arranged local high-school outreach campaigns, promoting public-speaking formats.",
       ],
     },
   ];

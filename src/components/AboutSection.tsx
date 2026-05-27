@@ -12,7 +12,7 @@ export default function AboutSection() {
     { emoji: "🌱", title: "Indore, MP", desc: "Where the story began — rooted in vibrant culture" },
     { emoji: "🎓", title: "Pune & Beyond", desc: "Deep intellectual growth & academic exploration" },
     { emoji: "💼", title: "Professional World", desc: "Forging paths in Logistics, Content Marketing & Legal Research" },
-    { emoji: "✨", title: "pearlkitty Jewellers", desc: "Expressing creative entrepreneurship through handcrafted gems" },
+    { emoji: "✨", title: "pearlkitty", desc: "Expressing creative entrepreneurship through handcrafted gems" },
     { emoji: "🚀", title: "Today & Forward", desc: "Aggregating operations, storytelling, and impactful building" },
   ];
 

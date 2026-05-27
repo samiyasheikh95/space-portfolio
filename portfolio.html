@@ -135,7 +135,9 @@
       <ul class="hidden md:flex items-center gap-8">
         <li><a @mouseenter="isHovered = true" @mouseleave="isHovered = false" href="#about" class="relative text-xs tracking-widest text-[#F7F4D5]/75 font-sans uppercase hover:text-[#EC9C9D] transition-colors">About</a></li>
         <li><a @mouseenter="isHovered = true" @mouseleave="isHovered = false" href="#experience" class="relative text-xs tracking-widest text-[#F7F4D5]/75 font-sans uppercase hover:text-[#EC9C9D] transition-colors">Experience</a></li>
-        <li><a @mouseenter="isHovered = true" @mouseleave="isHovered = false" href="#portfolio" class="relative text-xs tracking-widest text-[#F7F4D5]/75 font-sans uppercase hover:text-[#EC9C9D] transition-colors">Portfolio</a></li>
+        <li><a @mouseenter="isHovered = true" @mouseleave="isHovered = false" href="#initiatives" class="relative text-xs tracking-widest text-[#F7F4D5]/75 font-sans uppercase hover:text-[#EC9C9D] transition-colors">Initiatives</a></li>
+        <li><a @mouseenter="isHovered = true" @mouseleave="isHovered = false" href="#case-studies" class="relative text-xs tracking-widest text-[#F7F4D5]/75 font-sans uppercase hover:text-[#EC9C9D] transition-colors">Case Studies</a></li>
+        <li><a @mouseenter="isHovered = true" @mouseleave="isHovered = false" href="#portfolio" class="relative text-xs tracking-widest text-[#F7F4D5]/75 font-sans uppercase hover:text-[#EC9C9D] transition-colors">Gallery</a></li>
         <li><a @mouseenter="isHovered = true" @mouseleave="isHovered = false" href="#skills" class="relative text-xs tracking-widest text-[#F7F4D5]/75 font-sans uppercase hover:text-[#EC9C9D] transition-colors">Skills</a></li>
         <li><a @mouseenter="isHovered = true" @mouseleave="isHovered = false" href="#contact" class="relative text-xs tracking-widest text-[#F7F4D5]/75 font-sans uppercase hover:text-[#EC9C9D] transition-colors">Connect</a></li>
       </ul>
@@ -156,7 +158,9 @@
       <ul class="flex flex-col gap-6 justify-center items-start flex-1 text-left">
         <li><a href="#about" @click="mobileOpen = false" class="font-serif text-3xl tracking-wide text-[#F7F4D5] hover:text-[#EC9C9D]">About</a></li>
         <li><a href="#experience" @click="mobileOpen = false" class="font-serif text-3xl tracking-wide text-[#F7F4D5] hover:text-[#EC9C9D]">Experience</a></li>
-        <li><a href="#portfolio" @click="mobileOpen = false" class="font-serif text-3xl tracking-wide text-[#F7F4D5] hover:text-[#EC9C9D]">Portfolio</a></li>
+        <li><a href="#initiatives" @click="mobileOpen = false" class="font-serif text-3xl tracking-wide text-[#F7F4D5] hover:text-[#EC9C9D]">Initiatives</a></li>
+        <li><a href="#case-studies" @click="mobileOpen = false" class="font-serif text-3xl tracking-wide text-[#F7F4D5] hover:text-[#EC9C9D]">Case Studies</a></li>
+        <li><a href="#portfolio" @click="mobileOpen = false" class="font-serif text-3xl tracking-wide text-[#F7F4D5] hover:text-[#EC9C9D]">Gallery</a></li>
         <li><a href="#skills" @click="mobileOpen = false" class="font-serif text-3xl tracking-wide text-[#F7F4D5] hover:text-[#EC9C9D]">Skills</a></li>
         <li><a href="#contact" @click="mobileOpen = false" class="font-serif text-3xl tracking-wide text-[#F7F4D5] hover:text-[#EC9C9D]">Connect</a></li>
       </ul>
@@ -279,7 +283,7 @@
           <div class="flex items-start gap-4">
             <div class="w-10 h-10 rounded-full border border-[#D3968C] flex items-center justify-center bg-[#0d2e36] text-lg flex-shrink-0 z-10 shadow-lg">✨</div>
             <div>
-              <h4 class="font-serif text-lg font-bold text-[#F7F4D5]">pearlkitty Jewellers</h4>
+              <h4 class="font-serif text-lg font-bold text-[#F7F4D5]">pearlkitty</h4>
               <p class="font-sans text-xs text-[#D3968C] mt-1">Expressing creative entrepreneurship through handcrafted gems</p>
             </div>
           </div>
@@ -323,36 +327,37 @@
         
         <!-- Job 1 -->
         <div @click="openJob = (openJob === 0 ? null : 0)" :class="openJob === 0 ? 'border-[#EC9C9D]/50 bg-[#105666]/25 shadow-lg' : ''" class="relative w-full rounded-none bg-[#105666]/10 border border-[#D3968C]/12 p-6 transition-all duration-300 cursor-pointer group">
-          <div :class="openJob === 0 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">🏢</div>
+          <div :class="openJob === 0 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300 animate-pulse-slow">🌸</div>
           <div class="flex justify-between items-start gap-4">
             <div>
-              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">2023 – Present</p>
-              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Content & Operations Associate</h3>
-              <p class="text-sm text-[#EC9C9D] font-medium">Studio in Grey • <span class="text-xs font-mono text-[#F7F4D5]/60">Indore (MP)</span></p>
+              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">Present</p>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Co-Founder & Head of Design, Media, and Operations</h3>
+              <p class="text-sm text-[#EC9C9D] font-medium">Elegant Muslimah (Women-Oriented Events) • <span class="text-xs font-mono text-[#F7F4D5]/60">Indore (MP)</span></p>
             </div>
             <div class="text-[#D3968C]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div>
           </div>
           <div x-show="openJob === 0" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
-            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Managed end-to-end content production workflows and detailed editorial calendars.</p>
-            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Coordinated cross-functional teams to deliver client and internal assets on time.</p>
-            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Streamlined backend operational structures to skyrocket daily team efficiency.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Co-founded and scaled a women-oriented events management brand, directing overall creative design guidance, promotional media schedules, and experiential setups.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Oversee and design all high-contrast visual materials, organic brand strategy coordinates, and interactive community media layouts.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Govern operational workflows, vendor relations pipelines, budget sheets, and core event logistics.</p>
           </div>
         </div>
 
         <!-- Job 2 -->
         <div @click="openJob = (openJob === 1 ? null : 1)" :class="openJob === 1 ? 'border-[#EC9C9D]/50 bg-[#105666]/25 shadow-lg' : ''" class="relative w-full rounded-none bg-[#105666]/10 border border-[#D3968C]/12 p-6 transition-all duration-300 cursor-pointer group">
-          <div :class="openJob === 1 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">🛍️</div>
+          <div :class="openJob === 1 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">⚖️</div>
           <div class="flex justify-between items-start gap-4">
             <div>
-              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">2022 – 2023</p>
-              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Retail & Brand Coordinator</h3>
-              <p class="text-sm text-[#EC9C9D] font-medium">Pop Shop • <span class="text-xs font-mono text-[#F7F4D5]/60">Indore (MP)</span></p>
+              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">Present</p>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Organising Secretary</h3>
+              <p class="text-sm text-[#EC9C9D] font-medium">Antarrashtriya Maanavaadhikaar Nyaayik Suraksha Parishad (Reg.) • <span class="text-xs font-mono text-[#F7F4D5]/60">Indore (MP)</span></p>
             </div>
             <div class="text-[#D3968C]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div>
           </div>
           <div x-show="openJob === 1" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
-            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Supervised creative merchandising, local inventory setups, and vendor negotiations.</p>
-            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Created custom experiential pop-up locations and in-store showcase structures.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Direct local public advocacy programs, human rights awareness campaigns, and free legal assistance clinics.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Organize administration correspondence files, volunteer structures, and delegate coordinate outlines.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Styled highly visible graphical pamphlets, visual reports, and social templates for organizational events.</p>
           </div>
         </div>
 
@@ -369,10 +374,646 @@
           </div>
           <div x-show="openJob === 2" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
             <p class="text-sm font-light text-[#F7F4D5]/80">✦ Founded and styled an independent handcrafted bead jewelry & bespoke accessories label.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Curated design catalogs, sourced beads/mounts, and hand-built original jewelry.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Orchestrated regional workshops to mentor children and adults in jewelry crafts.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Took full charge of product photography, graphical content, and self-publishing setups.</p>
             <p class="text-sm font-light text-[#F7F4D5]/80">✦ Managed client delivery logic, custom order streams, packaging, and micro-logistics.</p>
           </div>
         </div>
 
+        <!-- Job 4 -->
+        <div @click="openJob = (openJob === 3 ? null : 3)" :class="openJob === 3 ? 'border-[#EC9C9D]/50 bg-[#105666]/25 shadow-lg' : ''" class="relative w-full rounded-none bg-[#105666]/10 border border-[#D3968C]/12 p-6 transition-all duration-300 cursor-pointer group">
+          <div :class="openJob === 3 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">🎨</div>
+          <div class="flex justify-between items-start gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">Dec 2025</p>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Customer Relations, Backend Operations & Co-Curator</h3>
+              <p class="text-sm text-[#EC9C9D] font-medium">Exhibit-A • <span class="text-xs font-mono text-[#F7F4D5]/60">Indore (MP)</span></p>
+            </div>
+            <div class="text-[#D3968C]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div>
+          </div>
+          <div x-show="openJob === 3" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Co-curated high-profile craft works and coordinated visual collections for local art exhibitions.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Optimized daily backend operations, inventory tracking models, and logistics flows for gallery exhibitions.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Managed customer relationships, custom orders, collector inquiries, and artist profiles with high responsiveness.</p>
+          </div>
+        </div>
+
+        <!-- Job 5 -->
+        <div @click="openJob = (openJob === 4 ? null : 4)" :class="openJob === 4 ? 'border-[#EC9C9D]/50 bg-[#105666]/25 shadow-lg' : ''" class="relative w-full rounded-none bg-[#105666]/10 border border-[#D3968C]/12 p-6 transition-all duration-300 cursor-pointer group">
+          <div :class="openJob === 4 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">📱</div>
+          <div class="flex justify-between items-start gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">1st Oct – 31st Nov 2025</p>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Social Media Manager</h3>
+              <p class="text-sm text-[#EC9C9D] font-medium">Socially Active (Agency) • <span class="text-xs font-mono text-[#F7F4D5]/60">Indore (MP)</span></p>
+            </div>
+            <div class="text-[#D3968C]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div>
+          </div>
+          <div x-show="openJob === 4" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Formulated engaging social media presence strategies, visual curation guides, and content marketing plans.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Produced 50+ aesthetic reels layouts, graphical microcopy captions, and trend-responsive scheduling grids.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Analyzed key account reach indices and boosted audience response rates organically by 25%.</p>
+          </div>
+        </div>
+
+        <!-- Job 6 -->
+        <div @click="openJob = (openJob === 5 ? null : 5)" :class="openJob === 5 ? 'border-[#EC9C9D]/50 bg-[#105666]/25 shadow-lg' : ''" class="relative w-full rounded-none bg-[#105666]/10 border border-[#D3968C]/12 p-6 transition-all duration-300 cursor-pointer group">
+          <div :class="openJob === 5 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">⚖️</div>
+          <div class="flex justify-between items-start gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">July 2025</p>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Legal Intern</h3>
+              <p class="text-sm text-[#EC9C9D] font-medium">Deepesh Joshi & Associates • <span class="text-xs font-mono text-[#F7F4D5]/60">Bhopal (MP)</span></p>
+            </div>
+            <div class="text-[#D3968C]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div>
+          </div>
+          <div x-show="openJob === 5" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Conducted detailed legal research on property covenants, civil liabilities, and agency laws.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Drafted basic affidavits, litigation reports, and corporate contract drafts.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Shadowed senior advocates in courts and compiled client meeting summaries.</p>
+          </div>
+        </div>
+
+        <!-- Job 7 -->
+        <div @click="openJob = (openJob === 6 ? null : 6)" :class="openJob === 6 ? 'border-[#EC9C9D]/50 bg-[#105666]/25 shadow-lg' : ''" class="relative w-full rounded-none bg-[#105666]/10 border border-[#D3968C]/12 p-6 transition-all duration-300 cursor-pointer group">
+          <div :class="openJob === 6 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">🌍</div>
+          <div class="flex justify-between items-start gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">2024 – 2025</p>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Content & Program Designer</h3>
+              <p class="text-sm text-[#EC9C9D] font-medium">Mu20.world • <span class="text-xs font-mono text-[#F7F4D5]/60">Remote</span></p>
+            </div>
+            <div class="text-[#D3968C]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div>
+          </div>
+          <div x-show="openJob === 6" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Worked on detailed content strategy and designed future programmes and collaborative leadership challenges.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Directed student-facing operations, virtual delegation programs, and digital community forums on youth leadership.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Co-curated and drafted the high-impact <a href="https://issuu.com/mu20schoolofopportunity/docs/mu20_opportunity_summit_2024_impact_report" target="_blank" rel="noopener noreferrer" class="text-[#EC9C9D] hover:text-[#EC9C9D]/90 underline font-semibold transition-colors">Mu20 Opportunity Summit 2024 Impact Report ↗</a> summarizing key metrics, programs and student success data.</p>
+          </div>
+        </div>
+
+        <!-- Job 8 -->
+        <div @click="openJob = (openJob === 7 ? null : 7)" :class="openJob === 7 ? 'border-[#EC9C9D]/50 bg-[#105666]/25 shadow-lg' : ''" class="relative w-full rounded-none bg-[#105666]/10 border border-[#D3968C]/12 p-6 transition-all duration-300 cursor-pointer group">
+          <div :class="openJob === 7 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">🏢</div>
+          <div class="flex justify-between items-start gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">2023 – 2025</p>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Content & Operations Associate</h3>
+              <p class="text-sm text-[#EC9C9D] font-medium">Studio in Grey • <span class="text-xs font-mono text-[#F7F4D5]/60">Indore (MP)</span></p>
+            </div>
+            <div class="text-[#D3968C]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div>
+          </div>
+          <div x-show="openJob === 7" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Managed end-to-end content production workflows and detailed editorial calendars.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Coordinated cross-functional teams to deliver client and internal assets on time.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Streamlined backend operational structures to skyrocket daily team efficiency.</p>
+          </div>
+        </div>
+
+        <!-- Job 9 -->
+        <div @click="openJob = (openJob === 8 ? null : 8)" :class="openJob === 8 ? 'border-[#EC9C9D]/50 bg-[#105666]/25 shadow-lg' : ''" class="relative w-full rounded-none bg-[#105666]/10 border border-[#D3968C]/12 p-6 transition-all duration-300 cursor-pointer group">
+          <div :class="openJob === 8 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">🛍️</div>
+          <div class="flex justify-between items-start gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">2022 – 2024</p>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Retail & Brand Coordinator</h3>
+              <p class="text-sm text-[#EC9C9D] font-medium">Pop Shop • <span class="text-xs font-mono text-[#F7F4D5]/60">Mumbai (MH)</span></p>
+            </div>
+            <div class="text-[#D3968C]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div>
+          </div>
+          <div x-show="openJob === 8" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Supervised creative merchandising, local inventory setups, and vendor negotiations.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Created custom experiential pop-up locations and in-store showcase structures.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Designed and maintained social media campaigns that bolstered community interactions.</p>
+          </div>
+        </div>
+
+        <!-- Job 10 -->
+        <div @click="openJob = (openJob === 9 ? null : 9)" :class="openJob === 9 ? 'border-[#EC9C9D]/50 bg-[#105666]/25 shadow-lg' : ''" class="relative w-full rounded-none bg-[#105666]/10 border border-[#D3968C]/12 p-6 transition-all duration-300 cursor-pointer group">
+          <div :class="openJob === 9 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">🏛️</div>
+          <div class="flex justify-between items-start gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">May – July 2024</p>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Legal Research Intern</h3>
+              <p class="text-sm text-[#EC9C9D] font-medium">Advocate Junaid Ahmad • <span class="text-xs font-mono text-[#F7F4D5]/60">Indore (MP)</span></p>
+            </div>
+            <div class="text-[#D3968C]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div>
+          </div>
+          <div x-show="openJob === 9" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Prepared reference binders and case summaries on personal laws and commercial litigation.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Evaluated jurisprudential patterns of high courts and documented case briefs.</p>
+          </div>
+        </div>
+
+        <!-- Job 11 -->
+        <div @click="openJob = (openJob === 10 ? null : 10)" :class="openJob === 10 ? 'border-[#EC9C9D]/50 bg-[#105666]/25 shadow-lg' : ''" class="relative w-full rounded-none bg-[#105666]/10 border border-[#D3968C]/12 p-6 transition-all duration-300 cursor-pointer group">
+          <div :class="openJob === 10 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">🎓</div>
+          <div class="flex justify-between items-start gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">2022 – 2023</p>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Content & Outreach Intern</h3>
+              <p class="text-sm text-[#EC9C9D] font-medium">Muniversiti Edcorp • <span class="text-xs font-mono text-[#F7F4D5]/60">Indore (MP)</span></p>
+            </div>
+            <div class="text-[#D3968C]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div>
+          </div>
+          <div x-show="openJob === 10" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Drafted informational slide sheets and student study packages.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Arranged local high-school outreach campaigns, promoting public-speaking formats.</p>
+          </div>
+        </div>
+
+        <!-- Job 12 -->
+        <div @click="openJob = (openJob === 11 ? null : 11)" :class="openJob === 11 ? 'border-[#EC9C9D]/50 bg-[#105666]/25 shadow-lg' : ''" class="relative w-full rounded-none bg-[#105666]/10 border border-[#D3968C]/12 p-6 transition-all duration-300 cursor-pointer group">
+          <div :class="openJob === 11 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">🎯</div>
+          <div class="flex justify-between items-start gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">2022 – 2023</p>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Social Media & Content Lead</h3>
+              <p class="text-sm text-[#EC9C9D] font-medium">YouthGenX • <span class="text-xs font-mono text-[#F7F4D5]/60">Remote</span></p>
+            </div>
+            <div class="text-[#D3968C]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div>
+          </div>
+          <div x-show="openJob === 11" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Spearheaded visual strategy across popular channels including Instagram and LinkedIn.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Produced 80+ unique layouts, slide decks, and captions on active youth affairs.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Spearheaded virtual audience engagement, elevating followers organically on IG.</p>
+          </div>
+        </div>
+
+        <!-- Job 13 -->
+        <div @click="openJob = (openJob === 12 ? null : 12)" :class="openJob === 12 ? 'border-[#EC9C9D]/50 bg-[#105666]/25 shadow-lg' : ''" class="relative w-full rounded-none bg-[#105666]/10 border border-[#D3968C]/12 p-6 transition-all duration-300 cursor-pointer group">
+          <div :class="openJob === 12 ? 'bg-[#EC9C9D] text-[#0A3323]' : 'text-[#F7F4D5]'" class="absolute left-[-41px] md:left-[-69px] top-6 w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#D3968C] bg-[#0d3a46] flex items-center justify-center text-lg md:text-xl transition-all duration-300">📊</div>
+          <div class="flex justify-between items-start gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-[#839958] font-mono mb-1">2022</p>
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-[#F7F4D5]">Sales intern</h3>
+              <p class="text-sm text-[#EC9C9D] font-medium">C.A Ayushi • <span class="text-xs font-mono text-[#F7F4D5]/60">Indore (MP)</span></p>
+            </div>
+            <div class="text-[#D3968C]"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div>
+          </div>
+          <div x-show="openJob === 12" class="mt-6 pt-5 border-t border-[#D3968C]/15 space-y-3 pl-1">
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Audited basic accounts journals, tax files, and local compliance worksheets.</p>
+            <p class="text-sm font-light text-[#F7F4D5]/80">✦ Maintained client relations and sorted digital assets for fast reporting.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL INITIATIVES SECTION -->
+  <section id="initiatives" class="relative py-24 px-6 md:px-12 bg-[#0a3323]/20 overflow-hidden z-10 border-t border-b border-[#F7F4D5]/5">
+    <!-- Overlay micro-particles -->
+    <div class="absolute inset-0 z-0 bg-cover bg-center mix-blend-color-dodge opacity-[0.03]" style="background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=1200');"></div>
+    <div class="max-w-7xl mx-auto flex flex-col text-left relative z-10">
+      <p class="text-xs font-sans tracking-[0.35em] uppercase text-[#839958] mb-3">GIVING BACK</p>
+      <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-[#F7F4D5] mb-12">
+        Social <span class="italic text-[#EC9C9D]">Initiatives</span>
+      </h2>
+
+      <!-- Bento Grid / Cards -->
+      <div class="grid grid-cols-12 gap-6 w-full">
+        
+        <!-- Initiative 1 (thegriefcare) -->
+        <div class="col-span-12 lg:col-span-6 border border-[#D3968C]/15 bg-[#105666]/10 backdrop-blur-md p-8 group hover:border-[#EC9C9D]/40 transition-all duration-300 relative">
+          <div class="absolute top-6 right-8 text-[11px] font-mono text-[#839958] tracking-widest uppercase flex items-center gap-1.5 opacity-60">
+            <span class="text-[#EC9C9D]">✦</span> 2020 – Present
+          </div>
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-10 h-10 rounded-full border border-[#D3968C]/30 flex items-center justify-center bg-[#0d2e36] text-lg flex-shrink-0 text-[#EC9C9D]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </div>
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-[#F7F4D5] group-hover:text-[#EC9C9D] transition-colors">thegriefcare</h3>
+              <p class="text-xs font-mono text-[#EC9C9D]/80 uppercase tracking-widest mt-1">Founder &middot; <span class="text-xs text-[#F7F4D5]/50 capitalize font-sans font-light tracking-normal">Digital / Instagram</span></p>
+            </div>
+          </div>
+          <p class="font-sans text-sm font-light text-[#F7F4D5]/80 leading-relaxed mb-6">
+            Founded an independent mental health awareness and resource accessibility touchpoint on Instagram. Generated safe virtual spaces, self-care journals, and supportive communities for processing grief, healing, and loss.
+          </p>
+          <div class="mt-auto">
+            <a href="https://instagram.com/thegriefcare" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-xs font-mono text-[#EC9C9D] hover:text-[#EC9C9D]/80 hover:underline transition-all">
+              <span>Visit @thegriefcare on Instagram</span> ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Initiative 2 (S.H.E. Foundation) -->
+        <div class="col-span-12 lg:col-span-6 border border-[#D3968C]/15 bg-[#105666]/10 backdrop-blur-md p-8 group hover:border-[#EC9C9D]/40 transition-all duration-300 relative">
+          <div class="absolute top-6 right-8 text-[11px] font-mono text-[#839958] tracking-widest uppercase flex items-center gap-1.5 opacity-60">
+            <span class="text-[#EC9C9D]">✦</span> 2021 – Present
+          </div>
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-10 h-10 rounded-full border border-[#D3968C]/30 flex items-center justify-center bg-[#0d2e36] text-lg flex-shrink-0 text-[#EC9C9D]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-[#F7F4D5] group-hover:text-[#EC9C9D] transition-colors">S.H.E. Foundation</h3>
+              <p class="text-xs font-mono text-[#EC9C9D]/80 uppercase tracking-widest mt-1">Active Organising Member &middot; <span class="text-xs text-[#F7F4D5]/50 capitalize font-sans font-light tracking-normal">Indore (MP)</span></p>
+            </div>
+          </div>
+          <p class="font-sans text-sm font-light text-[#F7F4D5]/80 leading-relaxed mb-6">
+            Drive local community empowerment programs, offline meet-ups, and environmental awareness drives to uplift regional stakeholders and clean the environment.
+          </p>
+          <ul class="space-y-2 mb-6 border-t border-[#D3968C]/10 pt-4">
+            <li class="font-sans text-xs font-light text-[#F7F4D5]/70 flex items-start gap-2">
+              <span class="text-[#EC9C9D]">✦</span>
+              <span>Curated safe regional meetups and growth advocacy structures for low-income women.</span>
+            </li>
+            <li class="font-sans text-xs font-light text-[#F7F4D5]/70 flex items-start gap-2">
+              <span class="text-[#EC9C9D]">✦</span>
+              <span>Design and drive fundraising events to secure critical resources for underprivileged women and local hygiene programs.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Initiative 3 (Kleemshree NGO) -->
+        <div class="col-span-12 lg:col-span-6 border border-[#D3968C]/15 bg-[#105666]/10 backdrop-blur-md p-8 group hover:border-[#EC9C9D]/40 transition-all duration-300 relative">
+          <div class="absolute top-6 right-8 text-[11px] font-mono text-[#839958] tracking-widest uppercase flex items-center gap-1.5 opacity-60">
+            <span class="text-[#EC9C9D]">✦</span> 2022 – Present
+          </div>
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-10 h-10 rounded-full border border-[#D3968C]/30 flex items-center justify-center bg-[#0d2e36] text-lg flex-shrink-0 text-[#EC9C9D]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 22a8 8 0 0 1 8-8v8"></path><path d="M22 22a16 16 0 0 0-16-16"></path><path d="M22 2a16 16 0 0 1-16 16"></path></svg>
+            </div>
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-[#F7F4D5] group-hover:text-[#EC9C9D] transition-colors">Kleemshree NGO</h3>
+              <p class="text-xs font-mono text-[#EC9C9D]/80 uppercase tracking-widest mt-1">Education Collaborator &middot; <span class="text-xs text-[#F7F4D5]/50 capitalize font-sans font-light tracking-normal">Indore (MP)</span></p>
+            </div>
+          </div>
+          <p class="font-sans text-sm font-light text-[#F7F4D5]/80 leading-relaxed mb-6">
+            Partner with educators to offer student growth structures and enable educational access below the poverty line, organizing school supplies drives and literacy drills.
+          </p>
+          <ul class="space-y-2 mb-6 border-t border-[#D3968C]/10 pt-4">
+            <li class="font-sans text-xs font-light text-[#F7F4D5]/70 flex items-start gap-2">
+              <span class="text-[#EC9C9D]">✦</span>
+              <span>Mobilized books and fundamental stationery materials to multiple children's educational centers.</span>
+            </li>
+            <li class="font-sans text-xs font-light text-[#F7F4D5]/70 flex items-start gap-2">
+              <span class="text-[#EC9C9D]">✦</span>
+              <span>Maintained foundational empowerment routines supporting student health, literacy workshops, and general self-esteem.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Initiative 4 (Fundraising Pop-up Stalls) -->
+        <div class="col-span-12 lg:col-span-6 border border-[#D3968C]/15 bg-[#105666]/10 backdrop-blur-md p-8 group hover:border-[#EC9C9D]/40 transition-all duration-300 relative">
+          <div class="absolute top-6 right-8 text-[11px] font-mono text-[#839958] tracking-widest uppercase flex items-center gap-1.5 opacity-60">
+            <span class="text-[#EC9C9D]">✦</span> Ongoing
+          </div>
+          <div class="flex items-start gap-4 mb-6">
+            <div class="w-10 h-10 rounded-full border border-[#D3968C]/30 flex items-center justify-center bg-[#0d2e36] text-lg flex-shrink-0 text-[#EC9C9D]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+            </div>
+            <div>
+              <h3 class="font-serif text-2xl font-bold text-[#F7F4D5] group-hover:text-[#EC9C9D] transition-colors">Fundraising Pop-up Stalls</h3>
+              <p class="text-xs font-mono text-[#EC9C9D]/80 uppercase tracking-widest mt-1">Independent Organizer &middot; <span class="text-xs text-[#F7F4D5]/50 capitalize font-sans font-light tracking-normal">Indore / Flea Markets</span></p>
+            </div>
+          </div>
+          <p class="font-sans text-sm font-light text-[#F7F4D5]/80 leading-relaxed mb-6">
+            Organize handcrafted jewelry stalls, bead showcases, and bespoke designs at local community flea markets and campus festivals, donating all collected revenues to partner regional NGOs.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES SECTION -->
+  <section id="case-studies" class="relative py-24 px-6 md:px-12 bg-[#0c2e36]/30 overflow-hidden z-10 border-b border-[#F7F4D5]/5" x-data="{ activeCase: 'case-01' }">
+    <div class="max-w-7xl mx-auto flex flex-col text-left">
+      <p class="text-xs font-sans tracking-[0.35em] uppercase text-[#839958] mb-3">STRATEGIC RESOLUTIONS</p>
+      <h2 class="font-serif text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-[#F7F4D5] mb-12">
+        Case <span class="italic text-[#EC9C9D]">Studies</span>
+      </h2>
+
+      <!-- Outer Grid Structure -->
+      <div class="grid grid-cols-12 gap-8 w-full mt-2">
+        <!-- Sidebar / Case selector -->
+        <div class="col-span-12 lg:col-span-4 flex flex-col gap-4">
+          <p class="text-[11px] font-mono tracking-wider uppercase text-[#F7F4D5]/40 mb-1 border-b border-[#D3968C]/10 pb-2">Select Case Study</p>
+          
+          <!-- Case 01 Button -->
+          <button @click="activeCase = 'case-01'" :class="activeCase === 'case-01' ? 'bg-[#105666]/25 border-[#EC9C9D] shadow-lg' : 'bg-[#105666]/5 border-[#D3968C]/15'" class="w-full text-left p-6 border transition-all duration-300 relative rounded-none flex items-start gap-4 cursor-pointer group">
+            <span class="font-mono text-xs font-bold" :class="activeCase === 'case-01' ? 'text-[#EC9C9D]' : 'text-[#839958]'">01.</span>
+            <div class="flex-1">
+              <h3 class="font-serif text-lg font-bold leading-snug transition-colors" :class="activeCase === 'case-01' ? 'text-[#F7F4D5]' : 'text-[#F7F4D5]/70 group-hover:text-[#F7F4D5]'">Simultaneous Dual-Format Production</h3>
+              <p class="text-xs font-sans font-light text-[#F7F4D5]/50 mt-2 line-clamp-1">Festive Lookbook & Product Shoot</p>
+            </div>
+            <svg class="text-[#EC9C9D] w-4 h-4 mt-1 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+
+          <!-- Case 02 Button -->
+          <button @click="activeCase = 'case-02'" :class="activeCase === 'case-02' ? 'bg-[#105666]/25 border-[#EC9C9D] shadow-lg' : 'bg-[#105666]/5 border-[#D3968C]/15'" class="w-full text-left p-6 border transition-all duration-300 relative rounded-none flex items-start gap-4 cursor-pointer group">
+            <span class="font-mono text-xs font-bold" :class="activeCase === 'case-02' ? 'text-[#EC9C9D]' : 'text-[#839958]'">02.</span>
+            <div class="flex-1">
+              <h3 class="font-serif text-lg font-bold leading-snug transition-colors" :class="activeCase === 'case-02' ? 'text-[#F7F4D5]' : 'text-[#F7F4D5]/70 group-hover:text-[#F7F4D5]'">Live Event Coverage at Scale</h3>
+              <p class="text-xs font-sans font-light text-[#F7F4D5]/50 mt-2 line-clamp-1">Brand Activation & Community Pop-Up</p>
+            </div>
+            <svg class="text-[#EC9C9D] w-4 h-4 mt-1 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Details Panel -->
+        <div class="col-span-12 lg:col-span-8">
+          <!-- Case 01 Frame -->
+          <div x-show="activeCase === 'case-01'" class="border border-[#D3968C]/15 bg-[#105666]/12 backdrop-blur-md p-8 md:p-10 relative flex flex-col h-full min-h-[500px]">
+            <span class="absolute top-8 right-8 font-mono text-[56px] font-bold text-[#F7F4D5]/5 leading-none select-none">CASE 01</span>
+            
+            <div class="border-b border-[#D3968C]/10 pb-6 mb-8">
+              <span class="text-[10px] font-mono tracking-widest text-[#EC9C9D] uppercase block mb-2 font-bold">ACTIVE PROJECT RECONSTRUCTION</span>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-[#F7F4D5]">Simultaneous Dual-Format Production</h3>
+              
+              <!-- Metadata details grid -->
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#839958] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                  <div>
+                    <span class="text-[9px] font-mono text-[#F7F4D5]/40 uppercase tracking-wider block">Project</span>
+                    <span class="text-xs font-sans text-[#F7F4D5]/80 font-medium whitespace-nowrap block">Festive Lookbook</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#839958] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <div>
+                    <span class="text-[9px] font-mono text-[#F7F4D5]/40 uppercase tracking-wider block">Location</span>
+                    <span class="text-xs font-sans text-[#F7F4D5]/80 font-medium whitespace-nowrap block">Heritage Resort, Indore</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#839958] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  <div>
+                    <span class="text-[9px] font-mono text-[#F7F4D5]/40 uppercase tracking-wider block">Format</span>
+                    <span class="text-xs font-sans text-[#F7F4D5]/80 font-medium whitespace-nowrap block">Lookbook + Tabletop</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#839958] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  <div>
+                    <span class="text-[9px] font-mono text-[#F7F4D5]/40 uppercase tracking-wider block">Scope</span>
+                    <span class="text-xs font-sans text-[#F7F4D5]/80 font-medium whitespace-nowrap block">Single Day / Hard</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Role description indicator -->
+              <div class="mt-4 pt-4 border-t border-[#D3968C]/5 flex flex-wrap items-center gap-2">
+                <span class="text-[10px] font-mono bg-[#839958]/15 text-[#F7F4D5] px-2.5 py-1 uppercase tracking-wider border border-[#839958]/25">Role</span>
+                <span class="text-xs font-sans font-light text-[#F7F4D5]/90 italic">On-Set Operations Lead, Set Curator & Production Coordinator</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
+              <!-- Complications Column -->
+              <div class="flex flex-col gap-6">
+                <h4 class="text-xs font-mono font-bold tracking-widest text-[#EC9C9D] uppercase flex items-center gap-2 pb-2 border-b border-[#EC9C9D]/10">
+                  <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                  The Complications
+                </h4>
+                <div class="space-y-6">
+                  <div class="bg-[#0c2e36]/40 p-4 border-l-2 border-[#EC9C9D]/40">
+                    <span class="text-[10px] font-mono text-[#EC9C9D] block mb-1 uppercase font-semibold">Crisis 01</span>
+                    <h5 class="font-serif text-sm font-bold text-[#F7F4D5] mb-2 leading-tight">Missing Infrastructure: The Backdrop Vanished</h5>
+                    <p class="font-sans text-xs font-light text-[#F7F4D5]/70 leading-relaxed">The studio tabletop setup depended entirely on a black seamless backdrop—left behind in the city. Discovered on location with no retrieval window. The cottage interior was heating up fast, and the backdrop was non-negotiable for the product aesthetic. The submission clock was already running.</p>
+                  </div>
+                  <div class="bg-[#0c2e36]/40 p-4 border-l-2 border-[#EC9C9D]/40">
+                    <span class="text-[10px] font-mono text-[#EC9C9D] block mb-1 uppercase font-semibold">Crisis 02</span>
+                    <h5 class="font-serif text-sm font-bold text-[#F7F4D5] mb-2 leading-tight">Lighting Collapse: Outdoor Chaos in Peak Heat</h5>
+                    <p class="font-sans text-xs font-light text-[#F7F4D5]/70 leading-relaxed">Moving outside meant harsh shadows, inconsistent colour temperature, and a closing window of usable natural light. The setup had to be completely restructured and executed before the light window narrowed further. No additional crew, no extra time built into the schedule.</p>
+                  </div>
+                  <div class="bg-[#0c2e36]/40 p-4 border-l-2 border-[#EC9C9D]/40">
+                    <span class="text-[10px] font-mono text-[#EC9C9D] block mb-1 uppercase font-semibold">Crisis 03</span>
+                    <h5 class="font-serif text-sm font-bold text-[#F7F4D5] mb-2 leading-tight">Concurrent Production Crisis: Missing Key Costume</h5>
+                    <p class="font-sans text-xs font-light text-[#F7F4D5]/70 leading-relaxed">Mid-day, a signature look from the festive collection—locked into the shot list—was discovered still in the city. No time to retrieve it. The model's schedule was immovable. That look either happened with what was on hand or it didn't happen at all.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- How Resolved Column -->
+              <div class="flex flex-col gap-6">
+                <h4 class="text-xs font-mono font-bold tracking-widest text-[#839958] uppercase flex items-center gap-2 pb-2 border-b border-[#839958]/20">
+                  <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14M22 4L12 14.01l-3-3"/></svg>
+                  How It Was Resolved
+                </h4>
+                <div class="space-y-6">
+                  <div class="bg-[#0c2e36]/20 p-4 border-l-2 border-[#839958]/30">
+                    <span class="text-[10px] font-mono text-[#839958] block mb-1 uppercase font-semibold">Resolution Action 1</span>
+                    <h5 class="font-serif text-sm font-bold text-[#F7F4D5] mb-2 leading-tight">Reconstructing the Setup</h5>
+                    <p class="font-sans text-xs font-light text-[#F7F4D5]/70 leading-relaxed">Black fabric sheets were sourced immediately from available materials and used to reconstruct the seamless on-site. The entire tabletop unit was moved outside to an open, shaded corridor of the cottage that offered diffused indirect light without the interior heat trap. Shot sequencing was immediately reorganised to front-load all products requiring the most controlled light. The photographer was briefed on revised priorities within minutes. The entire tabletop unit was operational again in under 30 minutes.</p>
+                  </div>
+                  <div class="bg-[#0c2e36]/20 p-4 border-l-2 border-[#839958]/30">
+                    <span class="text-[10px] font-mono text-[#839958] block mb-1 uppercase font-semibold">Resolution Action 2</span>
+                    <h5 class="font-serif text-sm font-bold text-[#F7F4D5] mb-2 leading-tight">Bridging the Costume Gap</h5>
+                    <p class="font-sans text-xs font-light text-[#F7F4D5]/70 leading-relaxed">The missing costume was reconceived as a styled look using pieces already on location. Separates were re-paired, and a dupatta was re-draped to shift the silhouette. Strategically, the look was repositioned in the shot list as a transition outfit rather than a hero look—a move that actually strengthened the narrative arc of the sequence and gave the photographer a cleaner visual progression.</p>
+                  </div>
+                  <div class="bg-[#0c2e36]/20 p-4 border-l-2 border-[#839958]/30">
+                    <span class="text-[10px] font-mono text-[#839958] block mb-1 uppercase font-semibold">Resolution Action 3</span>
+                    <h5 class="font-serif text-sm font-bold text-[#F7F4D5] mb-2 leading-tight">Synchronised Execution</h5>
+                    <p class="font-sans text-xs font-light text-[#F7F4D5]/70 leading-relaxed">Both units operated on a shared 20-minute checkpoint system communicated via messaging. Set changes on the model side were pre-staged in an adjacent space to keep reset time under 15 minutes. The product shoot wrapped with the final usable light. The model shoot completed its full shot list.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Outcomes Block -->
+            <div class="mt-8 pt-8 border-t border-[#D3968C]/15 flex flex-col gap-6 w-full">
+              <h4 class="text-xs font-mono font-bold tracking-widest text-[#839958] uppercase flex items-center gap-2 pb-2 border-b border-[#D3968C]/10">
+                <svg class="text-[#839958] w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Deliverables & Outcomes
+              </h4>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
+                <div class="bg-[#105666]/15 border border-[#839958]/20 p-5 flex flex-col justify-center text-left">
+                  <span class="font-serif text-3xl font-bold text-[#EC9C9D] block mb-1">2</span>
+                  <span class="font-sans text-[11px] text-[#F7F4D5]/70 leading-snug">Complete units delivered on deadline</span>
+                </div>
+                <div class="bg-[#105666]/15 border border-[#839958]/20 p-5 flex flex-col justify-center text-left">
+                  <span class="font-serif text-3xl font-bold text-[#EC9C9D] block mb-1">0</span>
+                  <span class="font-sans text-[11px] text-[#F7F4D5]/70 leading-snug">Reshoots flagged in post-production</span>
+                </div>
+                <div class="bg-[#105666]/5 border border-[#D3968C]/10 p-5 flex flex-col justify-center">
+                  <p class="font-sans text-xs font-light text-[#F7F4D5]/85 leading-relaxed italic">"Full product catalogue and complete lookbook sequence. The improvised black fabric backdrop held cleanly across all product frames. The reconstructed costume look was selected as a grid post for the campaign launch. Every problem that day was unplanned. None of them showed in the final work."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial Gallery Block -->
+            <div class="mt-8 pt-8 border-t border-[#D3968C]/15 flex flex-col gap-6 w-full">
+              <h4 class="text-xs font-mono font-bold tracking-widest text-[#EC9C9D] uppercase flex items-center gap-2 pb-2 border-b border-[#EC9C9D]/10">
+                <svg class="text-[#EC9C9D] w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                Visual Testimony & On-Set Production Captures
+              </h4>
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="border border-[#D3968C]/15 overflow-hidden group relative h-[300px] bg-[#0c2e36]/30">
+                  <img src="https://i.ibb.co/XZ7T1fbX/IMG-20260527-WA0046.jpg" alt="Production Feedback & Testimonial Capture 01" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+                  <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all duration-300"></div>
+                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-4">
+                    <span class="text-[9px] font-mono uppercase text-[#EC9C9D] tracking-wider block">Festive Lookbook Styling</span>
+                    <span class="text-[11px] font-sans text-[#F7F4D5]/90 leading-snug">Studio Backdrop & Costume Highlights</span>
+                  </div>
+                </div>
+                <div class="border border-[#D3968C]/15 overflow-hidden group relative h-[300px] bg-[#0c2e36]/30">
+                  <img src="https://i.ibb.co/p6FG9yns/IMG-20260527-WA0047.jpg" alt="Production Feedback & Testimonial Capture 02" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+                  <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all duration-300"></div>
+                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-4">
+                    <span class="text-[9px] font-mono uppercase text-[#EC9C9D] tracking-wider block">Client Appreciation</span>
+                    <span class="text-[11px] font-sans text-[#F7F4D5]/90 leading-snug font-normal">Direct Feedback on Rapid Delivery</span>
+                  </div>
+                </div>
+                <div class="border border-[#D3968C]/15 overflow-hidden group relative h-[300px] bg-[#0c2e36]/30">
+                  <img src="https://i.ibb.co/W4QMFpfd/IMG-20260527-WA0048.jpg" alt="Production Feedback & Testimonial Capture 03" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+                  <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all duration-300"></div>
+                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-4">
+                    <span class="text-[9px] font-mono uppercase text-[#EC9C9D] tracking-wider block">Studio Process Capture</span>
+                    <span class="text-[11px] font-sans text-[#F7F4D5]/90 leading-snug">Continuous Multi-Format Execution Details</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Case 02 Frame -->
+          <div x-show="activeCase === 'case-02'" class="border border-[#D3968C]/15 bg-[#105666]/12 backdrop-blur-md p-8 md:p-10 relative flex flex-col h-full min-h-[500px]">
+            <span class="absolute top-8 right-8 font-mono text-[56px] font-bold text-[#F7F4D5]/5 leading-none select-none">CASE 02</span>
+            
+            <div class="border-b border-[#D3968C]/10 pb-6 mb-8">
+              <span class="text-[10px] font-mono tracking-widest text-[#EC9C9D] uppercase block mb-2 font-bold font-semibold">ACTIVE PROJECT RECONSTRUCTION</span>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-[#F7F4D5]">Live Event Coverage at Scale</h3>
+              
+              <!-- Metadata details grid -->
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#839958] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                  <div>
+                    <span class="text-[9px] font-mono text-[#F7F4D5]/40 uppercase tracking-wider block">Project</span>
+                    <span class="text-xs font-sans text-[#F7F4D5]/80 font-medium whitespace-nowrap block">Brand Activation</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#839958] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <div>
+                    <span class="text-[9px] font-mono text-[#F7F4D5]/40 uppercase tracking-wider block">Location</span>
+                    <span class="text-xs font-sans text-[#F7F4D5]/80 font-medium whitespace-nowrap block">Indore (MP)</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#839958] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                  <div>
+                    <span class="text-[9px] font-mono text-[#F7F4D5]/40 uppercase tracking-wider block">Format</span>
+                    <span class="text-xs font-sans text-[#F7F4D5]/80 font-medium whitespace-nowrap block">Full-Day Event Coverage</span>
+                  </div>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-[#839958] shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                  <div>
+                    <span class="text-[9px] font-mono text-[#F7F4D5]/40 uppercase tracking-wider block">Timeline</span>
+                    <span class="text-xs font-sans text-[#F7F4D5]/80 font-medium whitespace-nowrap block">Single Day / Real-Time</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Role description indicator -->
+              <div class="mt-4 pt-4 border-t border-[#D3968C]/5 flex flex-wrap items-center gap-2">
+                <span class="text-[10px] font-mono bg-[#839958]/15 text-[#F7F4D5] px-2.5 py-1 uppercase tracking-wider border border-[#839958]/25">Role</span>
+                <span class="text-xs font-sans font-light text-[#F7F4D5]/90 italic">Content Strategist & On-Ground Production Lead</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
+              <!-- Complications Column -->
+              <div class="flex flex-col gap-6">
+                <h4 class="text-xs font-mono font-bold tracking-widest text-[#EC9C9D] uppercase flex items-center gap-2 pb-2 border-b border-[#EC9C9D]/10">
+                  <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                  The Cascading Failures
+                </h4>
+                <div class="space-y-6">
+                  <div class="bg-[#0c2e36]/40 p-4 border-l-2 border-[#EC9C9D]/40">
+                    <span class="text-[10px] font-mono text-[#EC9C9D] block mb-1 uppercase font-semibold">Crisis 01</span>
+                    <h5 class="font-serif text-sm font-bold text-[#F7F4D5] mb-2 leading-tight">Key Personnel Loss: Videographer Cancelled Hours Before</h5>
+                    <p class="font-sans text-xs font-light text-[#F7F4D5]/70 leading-relaxed">No notice. No contingency in place. The primary videographer dropped out on the morning of the event, leaving a full Reel production brief, carousel shoot list, and live coverage hanging. An eight-Reel production, carousel sets, and live Stories coverage—all scheduled to post the same day—were suddenly without a camera operator or camera.</p>
+                  </div>
+                  <div class="bg-[#0c2e36]/40 p-4 border-l-2 border-[#EC9C9D]/40">
+                    <span class="text-[10px] font-mono text-[#EC9C9D] block mb-1 uppercase font-semibold">Crisis 02</span>
+                    <h5 class="font-serif text-sm font-bold text-[#F7F4D5] mb-2 leading-tight">Equipment Chain Failure: Camera Arrives Without Storage</h5>
+                    <p class="font-sans text-xs font-light text-[#F7F4D5]/70 leading-relaxed">A replacement camera was sourced and dispatched from an alternate location. En route, the memory card was misplaced. The camera arrived on location operational but completely unusable—no functional storage, no way to begin shooting. At a single-day live event, there is no second window. The light, the crowd energy, the key moments—they happen once.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- How Resolved Column -->
+              <div class="flex flex-col gap-6">
+                <h4 class="text-xs font-mono font-bold tracking-widest text-[#839958] uppercase flex items-center gap-2 pb-2 border-b border-[#839958]/20">
+                  <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14M22 4L12 14.01l-3-3"/></svg>
+                  Crisis Workflow & resolutions
+                </h4>
+                <div class="space-y-6">
+                  <div class="bg-[#0c2e36]/20 p-4 border-l-2 border-[#839958]/30">
+                    <span class="text-[10px] font-mono text-[#839958] block mb-1 uppercase font-semibold">Resolution Action 1</span>
+                    <h5 class="font-serif text-sm font-bold text-[#F7F4D5] mb-2 leading-tight">Parallel Recovery Systems</h5>
+                    <p class="font-sans text-xs font-light text-[#F7F4D5]/70 leading-relaxed">A compatible memory card was sourced locally and arrived on-set before the event's opening segment concluded. In parallel, a backup shooting plan was activated: two additional smartphones were designated as secondary capture units for B-roll and crowd coverage. Nothing stopped rolling while the primary camera was being sourced.</p>
+                  </div>
+                  <div class="bg-[#0c2e36]/20 p-4 border-l-2 border-[#839958]/30">
+                    <span class="text-[10px] font-mono text-[#839958] block mb-1 uppercase font-semibold">Resolution Action 2</span>
+                    <h5 class="font-serif text-sm font-bold text-[#F7F4D5] mb-2 leading-tight">Triage & Restructured Priorities</h5>
+                    <p class="font-sans text-xs font-light text-[#F7F4D5]/70 leading-relaxed">The original shot list was immediately segmented into three priority tiers: hero Reel moments, carousel content, and supplementary footage. High-value moments—stage openings, key brand interactions, product reveals—were identified in advance on the run sheet and assigned to specific operators. The revised brief was communicated to every person holding a device before the memory card arrived.</p>
+                  </div>
+                  <div class="bg-[#0c2e36]/20 p-4 border-l-2 border-[#839958]/30">
+                    <span class="text-[10px] font-mono text-[#839958] block mb-1 uppercase font-semibold">Resolution Action 3</span>
+                    <h5 class="font-serif text-sm font-bold text-[#F7F4D5] mb-2 leading-tight">Live Editing & Compressed Workflow</h5>
+                    <p class="font-sans text-xs font-light text-[#F7F4D5]/70 leading-relaxed">Once the primary camera was operational, a compressed version of the original plan ran: Reel-first capture at every setup, carousels shot during natural crowd lulls, and Stories as a continuous thread throughout the day. Editing ran simultaneously with the shoot. Reels were cut natively in CapCut between setups using pre-built caption and hashtag templates. The first Reel posted before the event hit its midpoint.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Outcomes Block -->
+            <div class="mt-8 pt-8 border-t border-[#D3968C]/15 flex flex-col gap-6 w-full">
+              <h4 class="text-xs font-mono font-bold tracking-widest text-[#839958] uppercase flex items-center gap-2 pb-2 border-b border-[#D3968C]/10">
+                <svg class="text-[#839958] w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Deliverables & Outcomes
+              </h4>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
+                <div class="bg-[#105666]/15 border border-[#839958]/20 p-5 flex flex-col justify-center text-left">
+                  <span class="font-serif text-3xl font-bold text-[#EC9C9D] block mb-1">8/8</span>
+                  <span class="font-sans text-[11px] text-[#F7F4D5]/70 leading-snug">Reels delivered within the event day</span>
+                </div>
+                <div class="bg-[#105666]/15 border border-[#839958]/20 p-5 flex flex-col justify-center text-left">
+                  <span class="font-serif text-3xl font-bold text-[#EC9C9D] block mb-1">47k+</span>
+                  <span class="font-sans text-[11px] text-[#F7F4D5]/70 leading-snug">Combined Reel views within four days</span>
+                </div>
+                <div class="bg-[#105666]/5 border border-[#D3968C]/10 p-5 flex flex-col justify-center">
+                  <p class="font-sans text-xs font-light text-[#F7F4D5]/85 leading-relaxed italic">"All carousel content was scheduled and live by evening. Stories ran uninterrupted from doors-open to close—no visible gap in coverage despite the two-hour equipment crisis at the start. The client reported their highest single-day Instagram reach of the year. The event felt, to every external viewer, like a fully resourced production. It was one person, two phones, one recovered camera, and no room for error."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial Gallery Block -->
+            <div class="mt-8 pt-8 border-t border-[#D3968C]/15 flex flex-col gap-6 w-full">
+              <h4 class="text-xs font-mono font-bold tracking-widest text-[#EC9C9D] uppercase flex items-center gap-2 pb-2 border-b border-[#EC9C9D]/10">
+                <svg class="text-[#EC9C9D] w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                Visual Testimony & On-Set Production Captures
+              </h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="border border-[#D3968C]/15 overflow-hidden group relative h-[360px] bg-[#0c2e36]/30">
+                  <img src="https://i.ibb.co/N2d7VckL/IMG-20260527-WA0044.jpg" alt="Production Feedback & Testimonial Capture 01" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+                  <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all duration-300"></div>
+                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-4">
+                    <span class="text-[9px] font-mono uppercase text-[#EC9C9D] tracking-wider block">Production Echo</span>
+                    <span class="text-xs font-sans text-[#F7F4D5]/90">Happy Customer Feedback & Festive Lookbook Styling Outcome</span>
+                  </div>
+                </div>
+                <div class="border border-[#D3968C]/15 overflow-hidden group relative h-[360px] bg-[#0c2e36]/30">
+                  <img src="https://i.ibb.co/hxGFv3jp/IMG-20260527-WA0045.jpg" alt="Production Feedback & Testimonial Capture 02" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+                  <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all duration-300"></div>
+                  <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent p-4">
+                    <span class="text-[9px] font-mono uppercase text-[#EC9C9D] tracking-wider block">Campaign Launch</span>
+                    <span class="text-xs font-sans text-[#F7F4D5]/90">Client Gratitude & Direct Message Appreciation Snapshot</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -388,29 +1029,119 @@
       <!-- Bento Grid (Photos showing WA0024 Swap) -->
       <div class="grid grid-cols-12 gap-5 auto-rows-auto w-full">
         <!-- Item 1 (Beads Catalog) -->
-        <div @click="activeId = 0" class="col-span-12 md:col-span-12 lg:col-span-6 h-[340px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
-          <img src="https://i.ibb.co/B24nQn1p/IMG-20260516-WA0040.jpg" alt="pearlkitty beads" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <div @click="activeId = 0" class="col-span-12 md:col-span-6 lg:col-span-4 h-[380px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/B24nQn1p/IMG-20260516-WA0040.jpg" alt="pearlkitty beads" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
           <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
             <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">Handmade Jewelry</span>
-            <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">pearlkitty — Original Creations</h4>
+            <h4 class="font-serif text-lg text-[#F7F4D5]/90 font-semibold">Fundraising Pop-up</h4>
           </div>
         </div>
 
         <!-- Item 2 (Pop Shop display) -->
-        <div @click="activeId = 1" class="col-span-12 md:col-span-6 lg:col-span-6 h-[340px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
-          <img src="https://i.ibb.co/Lz12ShPG/IMG-20260516-WA0059.jpg" alt="pearlkitty Popshop" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+        <div @click="activeId = 1" class="col-span-12 md:col-span-6 lg:col-span-8 h-[380px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/Lz12ShPG/IMG-20260516-WA0059.jpg" alt="pearlkitty Popshop" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
           <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
             <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">pearlkitty</span>
             <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">Pop-Up Events & Handmade Craft Workshops</h4>
           </div>
         </div>
 
-        <!-- Item 9 (Youth Outreach - SWAPPED TO THE SUNGLASSES SUNSET PHOTO WA0024) -->
-        <div @click="activeId = 8" class="col-span-12 md:col-span-12 lg:col-span-12 h-[340px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
-          <img src="https://i.ibb.co/gZyrvcrx/IMG-20260516-WA0024.jpg" alt="Youth OutreachWA0024" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+        <!-- Item 3 (Magazine Features) -->
+        <div @click="activeId = 2" class="col-span-12 md:col-span-6 lg:col-span-4 h-[450px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/RT00T555/IMG-20260527-WA0038.jpg" alt="Magazine Features" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
           <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
-            <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">Youth Outreach</span>
-            <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">Mu20 Youth Program Promotional & Content Layout</h4>
+            <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">Writing</span>
+            <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">Magazine Features & Published Layouts</h4>
+          </div>
+        </div>
+
+        <!-- Item 4 (Writing Work) -->
+        <div @click="activeId = 3" class="col-span-12 md:col-span-6 lg:col-span-4 h-[450px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/C30JdRvm/IMG-20260527-WA0041.jpg" alt="Writing Work" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">Content</span>
+            <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">Writing Work</h4>
+          </div>
+        </div>
+
+        <!-- Item 5 (Social Media Strategy) -->
+        <div @click="activeId = 4" class="col-span-12 md:col-span-6 lg:col-span-4 h-[450px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/3ySq13tm/IMG-20260516-WA0035.jpg" alt="Social Media Strategy" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">Social Media</span>
+            <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">Socially Active — Brand Strategy & Visual curation</h4>
+          </div>
+        </div>
+
+        <!-- Item 6 (Community Shoots) -->
+        <div @click="activeId = 5" class="col-span-12 md:col-span-6 lg:col-span-6 h-[420px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/tT36w9ps/IMG-20260516-WA0034.jpg" alt="Shoots for social media" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">Community</span>
+            <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">shoots for social media</h4>
+          </div>
+        </div>
+
+        <!-- Item 7 (Elegant Muslimah) -->
+        <div @click="activeId = 6" class="col-span-12 md:col-span-6 lg:col-span-6 h-[420px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/mF8yVLs7/IMG-20260527-WA0040.jpg" alt="Elegant Muslimah News Coverage" class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">Custom Merch</span>
+            <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">Elegant Muslimah News Coverage</h4>
+          </div>
+        </div>
+
+        <!-- Item 8 (Operations) -->
+        <div @click="activeId = 7" class="col-span-12 md:col-span-6 lg:col-span-4 h-[320px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/3Y8gX7C5/IMG-20260516-WA0038.jpg" alt="Operations" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">Brand Identity</span>
+            <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">operations</h4>
+          </div>
+        </div>
+
+        <!-- Item 9 (Mu20 Summit) -->
+        <div @click="activeId = 8" class="col-span-12 md:col-span-6 lg:col-span-8 h-[320px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/gZyrvcrx/IMG-20260516-WA0024.jpg" alt="Mu20 Future Programmes" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">Youth Curation</span>
+            <h4 class="font-serif text-lg text-[#F7F4D5]/90 font-semibold">your neighbouring fashion enthusiast</h4>
+          </div>
+        </div>
+
+        <!-- Item 10 (Freelance Artist) -->
+        <div @click="activeId = 9" class="col-span-12 md:col-span-6 lg:col-span-6 h-[460px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/fhSC2D4/IMG-20260527-WA0033.jpg" alt="Freelance Artist" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">Freelance Art</span>
+            <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">Freelance Artist — Multidisciplinary Design & Face Painting Projects</h4>
+          </div>
+        </div>
+
+        <!-- Item 11 (College Events) -->
+        <div @click="activeId = 10" class="col-span-12 md:col-span-6 lg:col-span-6 h-[460px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/4RkdzX4z/IMG-20260527-WA0042.jpg" alt="College Events" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">College Events</span>
+            <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">College Events</h4>
+          </div>
+        </div>
+
+        <!-- Item 12 (Student Program) -->
+        <div @click="activeId = 11" class="col-span-12 md:col-span-6 lg:col-span-6 h-[400px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/KSPYZKg/IMG-20260527-WA0051.jpg" alt="Student Program" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">Youth Curation</span>
+            <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">Student Program</h4>
+          </div>
+        </div>
+
+        <!-- Item 13 (Mu20 Summit) -->
+        <div @click="activeId = 12" class="col-span-12 md:col-span-6 lg:col-span-6 h-[400px] relative border border-[#D3968C]/15 overflow-hidden group cursor-pointer">
+          <img src="https://i.ibb.co/TMJnPpqs/IMG-20260527-WA0050.jpg" alt="Mu20 Summit" class="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" />
+          <div class="absolute inset-x-0 bottom-0 top-[40%] bg-gradient-to-t from-[#0A3323]/95 to-transparent flex flex-col justify-end p-6">
+            <span class="text-[10px] font-mono tracking-widest uppercase text-[#EC9C9D]">Youth Curation</span>
+            <h4 class="font-serif text-lg text-[#F7F4D5] font-semibold">Mu20 Summit</h4>
           </div>
         </div>
       </div>
@@ -465,6 +1196,18 @@
           <div class="flex flex-wrap gap-1.5">
             <span class="text-[10px] tracking-wide px-2 py-1 bg-[#839958]/12 border border-[#839958]/20 text-[#839958]">Supply Chain Management</span>
             <span class="text-[10px] tracking-wide px-2 py-1 bg-[#839958]/12 border border-[#839958]/20 text-[#839958]">Merchandising</span>
+          </div>
+        </div>
+
+        <!-- Creative & Design -->
+        <div class="p-8 bg-[#F7F4D5]/5 border border-[#F7F4D5]/10 group transition-all duration-300 hover:bg-[#F7F4D5]/10">
+          <div class="text-3xl mb-4">🎨</div>
+          <h3 class="font-serif text-xl font-bold text-[#F7F4D5] mb-4">Creative & Design</h3>
+          <div class="flex flex-wrap gap-1.5">
+            <span class="text-[10px] tracking-wide px-2 py-1 bg-[#839958]/12 border border-[#839958]/20 text-[#839958]">Jewelry Design</span>
+            <span class="text-[10px] tracking-wide px-2 py-1 bg-[#839958]/12 border border-[#839958]/20 text-[#839958]">Multidisciplinary Art</span>
+            <span class="text-[10px] tracking-wide px-2 py-1 bg-[#839958]/12 border border-[#839958]/20 text-[#839958]">Visual Branding</span>
+            <span class="text-[10px] tracking-wide px-2 py-1 bg-[#839958]/12 border border-[#839958]/20 text-[#839958]">Creative Direction</span>
           </div>
         </div>
       </div>

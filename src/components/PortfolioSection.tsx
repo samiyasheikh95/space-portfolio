@@ -8,6 +8,10 @@ interface MediaItem {
   category: string;
   title: string;
   gridSpan: string; // for bento layout
+  objectPosition?: string;
+  description?: string;
+  linkText?: string;
+  linkUrl?: string;
 }
 
 export default function PortfolioSection() {
@@ -18,64 +22,108 @@ export default function PortfolioSection() {
       id: 0,
       src: "https://i.ibb.co/B24nQn1p/IMG-20260516-WA0040.jpg",
       category: "Handmade Jewelry",
-      title: "pearlkitty — Original Creations",
-      gridSpan: "col-span-12 md:col-span-12 lg:col-span-6 h-[340px]",
+      title: "Fundraising Pop-up",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-4 h-[380px]",
+      objectPosition: "object-center",
     },
     {
       id: 1,
       src: "https://i.ibb.co/Lz12ShPG/IMG-20260516-WA0059.jpg",
       category: "pearlkitty",
       title: "Pop-Up Events & Handmade Craft Workshops",
-      gridSpan: "col-span-12 md:col-span-6 lg:col-span-6 h-[340px]",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-8 h-[380px]",
+      objectPosition: "object-center",
     },
     {
       id: 2,
-      src: "https://i.ibb.co/nMJrytpx/IMG-20260525-WA0020.jpg",
+      src: "https://i.ibb.co/RT00T555/IMG-20260527-WA0038.jpg",
       category: "Writing",
       title: "Magazine Features & Published Layouts",
-      gridSpan: "col-span-12 md:col-span-6 lg:col-span-4 h-[280px]",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-4 h-[450px]",
+      objectPosition: "object-top",
     },
     {
       id: 3,
-      src: "https://i.ibb.co/xQM12Dm/IMG-20260525-WA0021.jpg",
+      src: "https://i.ibb.co/C30JdRvm/IMG-20260527-WA0041.jpg",
       category: "Content",
-      title: "Written Articles, Copywriting & Analytical Essays",
-      gridSpan: "col-span-12 md:col-span-6 lg:col-span-4 h-[280px]",
+      title: "Writing Work",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-4 h-[450px]",
+      objectPosition: "object-top",
     },
     {
       id: 4,
       src: "https://i.ibb.co/3ySq13tm/IMG-20260516-WA0035.jpg",
       category: "Social Media",
       title: "Socially Active — Brand Strategy & Visual curation",
-      gridSpan: "col-span-12 md:col-span-6 lg:col-span-4 h-[280px]",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-4 h-[450px]",
+      objectPosition: "object-center",
     },
     {
       id: 5,
       src: "https://i.ibb.co/tT36w9ps/IMG-20260516-WA0034.jpg",
       category: "Community",
-      title: "Elegant Muslimah — Organic Visual Brand Graphics",
-      gridSpan: "col-span-12 md:col-span-6 lg:col-span-5 h-[320px]",
+      title: "shoots for social media",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-6 h-[420px]",
+      objectPosition: "object-center",
     },
     {
       id: 6,
-      src: "https://i.ibb.co/cKPKH5Lg/IMG-20260525-WA0025.jpg",
+      src: "https://i.ibb.co/mF8yVLs7/IMG-20260527-WA0040.jpg",
       category: "Custom Merch",
-      title: "Local Merchandise Design & Production Coordinate",
-      gridSpan: "col-span-12 md:col-span-12 lg:col-span-7 h-[320px]",
+      title: "Elegant Muslimah News Coverage",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-6 h-[420px]",
+      objectPosition: "object-top",
     },
     {
       id: 7,
       src: "https://i.ibb.co/3Y8gX7C5/IMG-20260516-WA0038.jpg",
       category: "Brand Identity",
-      title: "pearlkitty — Design Guidelines & Graphics",
-      gridSpan: "col-span-12 md:col-span-6 lg:col-span-6 h-[290px]",
+      title: "operations",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-4 h-[320px]",
+      objectPosition: "object-center",
     },
     {
       id: 8,
       src: "https://i.ibb.co/gZyrvcrx/IMG-20260516-WA0024.jpg",
-      category: "Youth Outreach",
-      title: "Mu20 Youth Program Promotional Material",
-      gridSpan: "col-span-12 md:col-span-6 lg:col-span-6 h-[290px]",
+      category: "Youth Curation",
+      title: "your neighbouring fashion enthusiast",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-8 h-[320px]",
+      objectPosition: "object-center",
+      description: "Curated content and designed future programs, leadership challenges, and interactive platforms. Co-curated the Mu20 Opportunity Summit 2024 Impact Report which details performance, delegate outcomes, and student achievements globally.",
+      linkText: "View 2024 Impact Report",
+      linkUrl: "https://issuu.com/mu20schoolofopportunity/docs/mu20_opportunity_summit_2024_impact_report",
+    },
+    {
+      id: 9,
+      src: "https://i.ibb.co/fhSC2D4/IMG-20260527-WA0033.jpg",
+      category: "Freelance Art",
+      title: "Freelance Artist — Multidisciplinary Design & Face Painting Projects",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-6 h-[460px]",
+      objectPosition: "object-center",
+    },
+    {
+      id: 10,
+      src: "https://i.ibb.co/4RkdzX4z/IMG-20260527-WA0042.jpg",
+      category: "College Events",
+      title: "College Events",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-6 h-[460px]",
+      objectPosition: "object-center",
+    },
+    {
+      id: 11,
+      src: "https://i.ibb.co/KSPYZKg/IMG-20260527-WA0051.jpg",
+      category: "Youth Curation",
+      title: "Student Program",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-6 h-[400px]",
+      objectPosition: "object-center",
+    },
+    {
+      id: 12,
+      src: "https://i.ibb.co/TMJnPpqs/IMG-20260527-WA0050.jpg",
+      category: "Youth Curation",
+      title: "Mu20 Summit",
+      gridSpan: "col-span-12 md:col-span-6 lg:col-span-6 h-[400px]",
+      objectPosition: "object-center",
     },
   ];
 
@@ -122,7 +170,7 @@ export default function PortfolioSection() {
               <img
                 src={item.src}
                 alt={item.title}
-                className="w-full h-full object-cover object-center filter brightness-[0.75] contrast-[1.05] transition-all duration-700 group-hover:scale-105 group-hover:brightness-[1.0] group-hover:contrast-[1.12]"
+                className={`w-full h-full object-cover ${item.objectPosition || "object-center"} filter brightness-[0.75] contrast-[1.05] transition-all duration-700 group-hover:scale-105 group-hover:brightness-[1.0] group-hover:contrast-[1.12]`}
                 referrerPolicy="no-referrer"
               />
 
@@ -205,14 +253,28 @@ export default function PortfolioSection() {
                 <span className="text-xs font-mono tracking-widest text-[#EC9C9D] uppercase font-bold mb-2">
                   {activeItem.category}
                 </span>
-                <h3 className="font-serif text-2xl md:text-3xl text-[#F7F4D5] font-bold leading-tight mb-4">
+                <h3 className="font-serif text-2xl md:text-3xl text-[#F7F4D5]/90 font-bold leading-tight mb-4">
                   {activeItem.title}
                 </h3>
-                <p className="font-sans text-xs md:text-sm text-[#F7F4D5]/60 font-light leading-relaxed mb-6">
-                  Featured project illustrating Samiya Sheikh's custom-crafted visual, tactile, or copywriting work. Handled with full logistical care from initial concept to showcase launch.
+                <p className="font-sans text-xs md:text-sm text-[#F7F4D5]/65 font-light leading-relaxed mb-6">
+                  {activeItem.description || "Featured project illustrating Samiya Sheikh's custom-crafted visual, tactile, or copywriting work. Handled with full logistical care from initial concept to showcase launch."}
                 </p>
 
-                <div className="text-[10px] font-mono text-[#839958] flex items-center gap-2">
+                {activeItem.linkUrl && activeItem.linkText && (
+                  <div className="mb-6">
+                    <a
+                      href={activeItem.linkUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-4 py-2 border border-[#EC9C9D]/30 text-[#EC9C9D] bg-[#EC9C9D]/5 hover:bg-[#EC9C9D] hover:text-[#0A3323] transition-all text-xs tracking-wider uppercase font-sans font-medium hover:-translate-y-0.5 rounded-none"
+                    >
+                      <span>{activeItem.linkText}</span>
+                      <span className="text-xs">↗</span>
+                    </a>
+                  </div>
+                )}
+
+                <div className="text-[10px] font-mono text-[#839958] flex items-center gap-2 mt-2">
                   <span>✦ INDORE - MULTI DISCIPLINARY</span>
                   <span>•</span>
                   <span>MEMBER SPECIFIC</span>

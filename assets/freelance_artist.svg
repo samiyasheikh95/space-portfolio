@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A3323" />
+      <stop offset="50%" stop-color="#105666" />
+      <stop offset="100%" stop-color="#0d3a46" />
+    </linearGradient>
+    <!-- Accent Gradient -->
+    <linearGradient id="sakuraToMoss" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EC9C9D" />
+      <stop offset="100%" stop-color="#839958" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EC9C9D" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0d3a46" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)" />
+  <circle cx="400" cy="300" r="350" fill="url(#glow)" />
+
+  <!-- Constellations & Celestial Stars (Cosmic Artist vibe) -->
+  <g stroke="#F7F4D5" stroke-opacity="0.2" stroke-width="1.5">
+    <line x1="200" y1="150" x2="300" y2="180" />
+    <line x1="300" y1="180" x2="330" y2="280" />
+    <line x1="330" y1="280" x2="250" y2="350" />
+    <line x1="600" y1="150" x2="500" y2="220" />
+    <line x1="500" y1="220" x2="520" y2="340" />
+  </g>
+  
+  <!-- Tiny Sparkling Stars -->
+  <g fill="#F7F4D5" opacity="0.3">
+    <!-- Star elements -->
+    <path d="M 200 150 L 202 154 L 206 150 L 202 146 Z" />
+    <path d="M 300 180 L 302 184 L 306 180 L 302 176 Z" />
+    <path d="M 330 280 L 332 284 L 336 280 L 332 276 Z" />
+    <path d="M 600 150 L 602 154 L 606 150 L 602 146 Z" />
+    <path d="M 500 220 L 502 224 L 506 220 L 502 216 Z" />
+    <path d="M 520 340 L 522 344 L 526 340 L 522 336 Z" />
+  </g>
+
+  <!-- Central Canvas/Artist Frame -->
+  <rect x="180" y="80" width="440" height="440" rx="4" fill="none" stroke="#D3968C" stroke-width="2" stroke-opacity="0.6" />
+  <rect x="195" y="95" width="410" height="410" rx="2" fill="none" stroke="#F7F4D5" stroke-width="1" stroke-opacity="0.15" />
+  
+  <!-- Four Corner brackets -->
+  <path d="M 170 100 L 170 70 L 200 70" fill="none" stroke="#EC9C9D" stroke-width="2" />
+  <path d="M 630 100 L 630 70 L 600 70" fill="none" stroke="#EC9C9D" stroke-width="2" />
+  <path d="M 170 500 L 170 530 L 200 530" fill="none" stroke="#EC9C9D" stroke-width="2" />
+  <path d="M 630 500 L 630 530 L 600 530" fill="none" stroke="#EC9C9D" stroke-width="2" />
+
+  <!-- Artist Hand / Palette Stylized Icon -->
+  <g transform="translate(400, 240)" stroke="#F7F4D5" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Drawing a beautiful face-paint palette or crescent outline -->
+    <path d="M-60,-20 A60,60 0 1,0 60,-20 A20,20 0 0,1 40,-40 A30,30 0 0,0 -40,-40 A20,20 0 0,1 -60,-20 Z" fill="#105666" fill-opacity="0.5" stroke="#D3968C" stroke-width="2.5" />
+    <!-- Mixing wells in palette colored in our palette -->
+    <circle cx="-35" cy="-15" r="8" fill="#EC9C9D" stroke="none" />
+    <circle cx="-15" cy="15" r="8" fill="#D3968C" stroke="none" />
+    <circle cx="15" cy="15" r="8" fill="#839958" stroke="none" />
+    <circle cx="35" cy="-15" r="8" fill="#F7F4D5" stroke="none" />
+    <!-- Center thumb hole -->
+    <ellipse cx="0" cy="-15" rx="6" ry="10" fill="#0A3323" stroke="#D3968C" stroke-width="1.5" />
+
+    <!-- Stylized Drawing Brush crossing -->
+    <path d="M-70,50 L50,-70 M50,-70 L60,-80 L80,-60 L70,-50 L-50,70 Z" fill="#0A3323" stroke="#F7F4D5" stroke-width="1.5" />
+    <!-- Brush bristles with accent color Sakura -->
+    <path d="M60,-80 L72,-92 C75,-95 85,-95 88,-92 C91,-89 91,-79 88,-76 L76,-64" fill="#EC9C9D" stroke="#EC9C9D" stroke-width="1.5" />
+    <line x1="50" y1="-70" x2="62" y2="-58" stroke="#D3968C" stroke-width="2" />
+  </g>
+
+  <!-- Elegant Decorative Text -->
+  <text x="400" y="440" font-family="'Cormorant Garamond', serif" font-size="28" font-weight="bold" fill="#F7F4D5" text-anchor="middle" letter-spacing="4">
+    SAMIYA SHEIKH
+  </text>
+  <text x="400" y="475" font-family="'DM Sans', sans-serif" font-size="12" font-weight="300" fill="#EC9C9D" text-anchor="middle" letter-spacing="6">
+    ✦ MULTIDISCIPLINARY FREELANCE ARTIST ✦
+  </text>
+  
+  <!-- Outer Frame Decals -->
+  <circle cx="400" cy="50" r="3" fill="#839958" />
+  <circle cx="400" cy="550" r="3" fill="#839958" />
+</svg>
